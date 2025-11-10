@@ -9,7 +9,7 @@ const cadProjects = [
 
 export default function CADPortfolio() {
   return (
-    <div className="min-h-screen bg-black py-20 px-6">
+    <div className="min-h-screen dark:bg-black py-20 px-6">
       <h1 className="text-3xl font-bold text-center mb-12">CAD Models</h1>
 
       <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -21,7 +21,7 @@ export default function CADPortfolio() {
             transition={{ delay: i * 0.2 }}
           >
             <Link href={`/portfolio/cad/${p.slug}`}>
-              <div className="bg-black rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
+              <div className="dark:bg-black rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
                 <img src={p.img} alt={p.title} className="w-full h-56 object-cover" />
                 <div className="p-4">
                   <h2 className="text-xl font-semibold">{p.title}</h2>

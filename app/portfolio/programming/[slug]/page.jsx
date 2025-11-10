@@ -1,7 +1,7 @@
 "use client";
 import { useParams } from "next/navigation";
-import "katex/dist/katex.min.css";
-import { BlockMath } from "react-katex";
+// import "katex/dist/katex.min.css";
+// import { BlockMath } from "react-katex";
 
 const projectDetails = {
         "matlab-ode-solver": {
@@ -109,7 +109,7 @@ export default function ProgrammingProjectDetail() {
     
   const project = projectDetails[slug];
   return (
-    <div className="min-h-screen bg-black py-20 px-6">
+    <div className="min-h-screen dark:bg-black py-20 px-6">
       <div className="max-w-4xl mx-auto">
         {/* Title */}
         <h1 className="text-4xl font-bold mb-6">{project.title}</h1>
@@ -127,12 +127,12 @@ export default function ProgrammingProjectDetail() {
         {/* Math Formula */}
         <div className="bg-gray-700 p-6 rounded-xl shadow-md mb-6">
           <h2 className="text-xl font-semibold mb-2">Key Formula</h2>
-          <BlockMath>{project.math}</BlockMath>
+          {/* <BlockMath>{project.math}</BlockMath> */}
         </div>
 
         {/* Code Example */}
         {project.code && (
-          <div className="bg-gray-900 text-green-400 font-mono p-6 rounded-xl shadow-md overflow-x-auto">
+          <div className="dark:bg-gray-900 text-green-400 font-mono p-6 rounded-xl shadow-md overflow-x-auto">
             <pre>{project.code}</pre>
           </div>
         )}

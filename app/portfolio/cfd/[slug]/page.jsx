@@ -1,7 +1,7 @@
 "use client";
 import { useParams } from "next/navigation";
-import "katex/dist/katex.min.css";
-import { BlockMath } from "react-katex";
+// import { BlockMath } from "react-katex";
+// import "katex/dist/katex.min.css";
 
 export default function CFDProjectDetail() {
   const { slug } = useParams();
@@ -33,7 +33,7 @@ export default function CFDProjectDetail() {
   const project = projects[slug] || {};
 
   return (
-    <div className="min-h-screen bg-black py-20 px-6">
+    <div className="min-h-screen dark:bg-black py-20 px-6">
       <div className="max-w-4xl mx-auto">
         {/* Title */}
         <h1 className="text-4xl font-bold mb-6">{project.title}</h1>
@@ -49,9 +49,9 @@ export default function CFDProjectDetail() {
         <p className="text-lg leading-relaxed mb-6">{project.description}</p>
 
         {/* Math Formula */}
-        <div className="bg-black p-6 rounded-xl shadow-md">
+        <div className="dark:bg-black p-6 rounded-xl shadow-md">
           <h2 className="text-xl font-semibold mb-2">Key Formula</h2>
-          <BlockMath>{project.math}</BlockMath>
+          {/* <BlockMath>{project.math}</BlockMath> */}
         </div>
       </div>
     </div>

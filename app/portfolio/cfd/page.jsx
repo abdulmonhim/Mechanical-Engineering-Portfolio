@@ -10,7 +10,7 @@ const cfdProjects = [
 
 export default function CFDProjects() {
   return (
-    <div className="min-h-screen bg-black py-20 px-6">
+    <div className="min-h-screen dark:bg-black py-20 px-6">
       <h1 className="text-3xl md:text-4xl font-bold text-center mb-12 text-brand">
         CFD Simulation Projects
       </h1>
@@ -24,7 +24,7 @@ export default function CFDProjects() {
             transition={{ delay: i * 0.2 }}
           >
             <Link href={`/portfolio/cfd/${p.slug}`}>
-              <div className="bg-black rounded-xl shadow-md overflow-hidden hover:shadow-xl hover:scale-105 transition cursor-pointer">
+              <div className="dark:bg-black rounded-xl shadow-md overflow-hidden hover:shadow-xl hover:scale-105 transition cursor-pointer">
                 <img src={p.img} alt={p.title} className="w-full h-56 object-cover" />
                 <div className="p-4">
                   <h2 className="text-xl font-semibold">{p.title}</h2>
