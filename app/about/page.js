@@ -56,7 +56,7 @@ export default function AboutPage() {
               transition={{ delay: 0.3, duration: 0.8 }}
               className="text-lg leading-relaxed mb-4"
             >
-              Hi! I'm a passionate <span className="font-semibold text-blue-600">Mechanical Design Engineer</span> with a strong focus on CAD, FEA, and CFD. I love bringing complex engineering concepts to life through 3D modeling, simulation, and analysis.
+              I am a passionate <span className="font-semibold text-blue-600">Mechanical Design Engineer</span> with a strong focus on CAD, FEA, and CFD. I love bringing complex engineering concepts to life through 3D modeling, simulation, and analysis.
             </motion.p>
 
             <motion.p

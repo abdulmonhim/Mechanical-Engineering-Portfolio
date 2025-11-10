@@ -60,7 +60,7 @@ export default function Blog() {
               className="bg-white shadow-lg rounded-2xl overflow-hidden hover:shadow-2xl transition-shadow duration-300"
             >
               <div className="overflow-hidden">
-                <img
+                <image
                   src={post.image}
                   alt={post.title}
                   className="w-full h-56 object-cover hover:scale-105 transition-transform duration-500"
